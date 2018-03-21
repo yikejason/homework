@@ -1,0 +1,128 @@
+.order{
+  height: 100%;
+  .order-content{
+    height: 100%;
+    background-color: #F2F2F2;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .header{
+    padding: 15px 3%;
+    display: flex;
+    display: -webkit-flex;
+    background-color: #fff;
+    section{
+      display:flex;
+      display: -webkit-flex;
+      -webkit-align-items:center;/*垂直居中*/
+      -webkit-justify-content: center;/*水平居中*/
+    }
+    >section:nth-of-type(1){
+      width: 30%;
+      div{
+        width: 85px;
+        height: 85px;
+        text-align: center;
+        background-size: 100% 100%;
+        background-image: url('../../../images/coupon-img.png');
+        p:nth-of-type(1){
+          font-size: 18px;
+          color: #fff;
+          margin-bottom: 5px;
+          margin-top: 20px;
+          text-align: center;
+        }
+        p:nth-of-type(2){
+          font-size: 17px;
+          color: rgba(255, 255, 255, 0.73);
+        }
+      }
+    }
+    >section:nth-of-type(2){
+      width: 45%;
+    }
+    >section:nth-of-type(3){
+      width: 25%;
+      color: #E3524C;
+    }
+  }
+  .payTypeList{
+    .pay-title{
+      padding: 25px 30px 5px 30px;
+    }
+    .list-item{
+      background-color: #fff;
+      height: 65px;
+      line-height: 65px;
+      padding: 0 30px;
+      overflow: hidden;
+      border-bottom: 1px solid #e5e5e5;
+      img{
+        vertical-align: middle;
+      }
+      img:nth-of-type(1){
+        width: 51px;
+        //height: 30px;
+      }
+      span{
+        padding-left:25px;
+      }
+      img:nth-of-type(2){
+        width: 26px;
+        float: right;
+        position: relative;
+        top: 21px;
+        //height: 35px;
+      }
+    }
+  }
+  .bottom-btn{
+    display: flex;
+    display: -webkit-flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+   border-top: 1px solid #e5e5e5;
+    p{
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+    p:nth-of-type(1){
+      width: 40%;
+      line-height: 20px;
+      display:flex;
+      display: -webkit-flex;
+      align-items:center;/*垂直居中*/
+      justify-content: center;/*水平居中*/
+      span:nth-of-type(1){
+       width: 95px;
+        font-size: 15px;
+      }
+      span:nth-of-type(2){
+        color: #E3524C;
+        padding-right: 6px;
+        width: 67%;
+        font-size: 17px;
+      }
+    }
+    p:nth-of-type(2){
+      width: 0;
+      visibility: hidden;
+      background-color: #E3524C;
+      color: #fff;
+    }
+    p:nth-of-type(3){
+      width: 60%;
+      background-color: #6EC55C;
+      color: #fff;
+    }
+  }
+
+  .load-show{
+    .am-activity-indicator{
+      align-items:center;
+      justify-content: center;/*水平居中*/
+    }
+  }
+}

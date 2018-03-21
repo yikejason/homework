@@ -1,0 +1,317 @@
+@base-color:#fa9d4d;
+.publish{
+  height: 100%;
+  .publish-content{
+    height: 100%;
+    background-color: #eceef1;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    //margin-bottom: 100px;
+    h3,h5,h4{
+      margin:0;
+    }
+    h3{
+      font-size: 17px;
+    }
+    .photograph{
+      width: 90%;
+      padding: 20px 5%;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      p{
+        margin: 10px 0;
+        font-size: 14px;
+        color: #999999;
+      }
+      .img-contain {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .img-item{
+        margin-right: 1%;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        section{
+          width: 100%;
+          height: 100%;
+          float: left;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .del-icon{
+          width: 26px;
+          height: 26px;
+          position: absolute;
+          bottom: 5px;
+          right: 5px;
+          z-index: 10;
+        }
+      }
+      .file-but{
+        width: 80px;
+        height: 80px;
+        //position: relative;
+        .up-img{
+          width: 80px;
+          height: 80px;
+        }
+        .imgInp{
+          //display: inline-block;
+          //width: 80px;
+          //height: 80px;
+          //position: absolute;
+          //left: 0;
+          //top: 0;
+          //opacity:0;
+          //z-index: -1;
+          //display: none;
+        }
+      }
+
+    }
+    .grade{
+      width: 90%;
+      padding: 10px 5%;
+      background-color: #ffffff;
+      margin-top:10px;
+      .add-grade{
+        display:flex;
+        margin-top:10px;
+        flex-wrap: wrap;
+        .choose-small{
+          width: 22%;
+          display: inline-block;
+          height: 40px;
+          margin-right: 2%;
+          margin-bottom: 10px;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 5px;
+          background:@base-color;
+          border:1PX solid @base-color;
+          color:#fff;
+        }
+        .add-icon{
+          width: 22%;
+          display: inline-block;
+          height: 40px;
+          margin-bottom: 10px;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 5px;
+          border: 1PX solid #ddd;
+          background-color: #FFFFFF;
+          color: #333333;
+        }
+        .choose-primary,.user-grade {
+          height:40px;
+          width: 22%;
+          margin-right: 2%;
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 5px;
+          align-items: center;
+          justify-content: center;
+          background:@base-color;
+          border:1PX solid @base-color;
+          color:#fff;
+          span{
+            font-size: 12px;
+          }
+        }
+        .user-grade{
+          color: #888;
+          background:#FFFFFF;
+          border:1PX solid #ddd;
+        }
+      }
+    }
+    .subject{
+      padding: 10px 5%;
+      background-color: #ffffff;
+      margin-top:5px;
+      .choose-error{
+        color:#aaa;
+        font-weight:normal;
+        margin-top:4px;
+      }
+      .choose-subject{
+        display:flex;
+        margin-top:10px;
+        flex-wrap: wrap;
+        span{
+          width: 22%;
+          display: inline-block;
+          height: 40px;
+          margin-right: 2%;
+          margin-bottom: 10px;
+          border: 1PX solid #ddd;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 5px;
+        }
+      }
+    }
+    .teacher-talk{
+      padding: 10px 5%;
+      background-color: #ffffff;
+      margin-top:10px;
+      .talk-text{
+        margin-top:10px;
+        .am-list{
+          width: 100%;
+          margin: 0 auto;
+        }
+        .am-textarea-control textarea{
+          font-size: 14px;
+        }
+        .am-list-body{
+          border-top: none;
+        }
+        .am-list-item .am-list-line .am-list-content{
+          color: #333333;
+        }
+        .choice-school .am-list-line .am-list-content{
+          color: #333333 !important;
+        }
+        .am-list-body:after{
+          border-bottom: none;
+        }
+        .am-list-item{
+          border:1PX  solid #cdcdcd;
+          border-radius: 2px
+        }
+      }
+    }
+    .publish-foot{
+      margin-top:2px;
+      margin-bottom: 100px;
+      .foot-text{
+        font-size:12px;
+        text-align:center;
+        color:#999;
+        padding:20px 0;
+        .hw-num{
+          color: #FA6966;
+        }
+      }
+      .foot-btn{
+        margin-bottom:10px;
+        .foot-btn-main{
+          height: 45px;
+          display:block;
+          width:90%;
+          margin:0 auto;
+          background:#6bc94c;
+          color:#fff;
+          border:none;
+          border-radius:4px;
+          padding:8px;
+        }
+
+      }
+    }
+    .choosed{
+      background:@base-color;
+      border:1PX solid @base-color !important;
+      color:#fff;
+    }
+  }
+}
+.grade-modal{
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  h4{
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+  }
+  .grade-one{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .primary-list{
+      width: 100%;
+      display: flex;
+      flex-wrap:wrap;
+      span{
+        width: 22%;
+        display: inline-block;
+        height: 40px;
+        margin-right: 2%;
+        margin-bottom: 10px;
+        border: 1PX solid #ddd;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      span:nth-child(4){
+        margin-right:0;
+      }
+    }
+    .primary-grade{
+      width: 100%;
+      display: flex;
+      flex-wrap:wrap;
+      div{
+        height:40px;
+        width: 22%;
+        margin-right: 2%;
+        margin-bottom: 10px;
+        border: 1PX solid #ddd;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        align-items: center;
+        span{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .choosed{
+    background:@base-color;
+    border:1PX solid @base-color !important;
+    color:#fff;
+  }
+  .first-school{
+    margin:0;
+    text-align:left;
+    padding-top:10px;
+  }
+  .grade-height{
+    margin-top:10px;
+  }
+}
+.grade-info{
+  border-bottom:1PX solid #ddd;
+  padding:10px;
+  line-height:22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  h4{
+    margin: 0;
+    color: #555;
+    font-weight: 700;
+  }
+  .close-grade{
+    width:18px;
+    position: absolute;
+    right: 10px;
+  }
+}

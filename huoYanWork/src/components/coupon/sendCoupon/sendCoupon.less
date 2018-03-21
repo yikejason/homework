@@ -1,0 +1,265 @@
+
+.sendCoupon{
+  height: 100%;
+  .sendCoupon-content{
+    height: 100%;
+    background-color: #fbf9f9;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+  }
+  //input::-webkit-input-placeholder { /* WebKit browsers*/
+  //　　color:#888;
+  //}
+  //input:-moz-placeholder {  /* Mozilla Firefox 4 to 18*/
+  //  　　color:#888;
+  //}
+  //input::-moz-placeholder {  /* Mozilla Firefox 19+*/
+  //  　　color:#888
+  //}
+  //input:-ms-input-placeholder { /* Internet Explorer 10+*/
+  //  　　color:#888
+  //}
+  .send-info{
+    padding-top: 15px;
+  }
+  .info-item{
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    .am-list-item .am-list-line .am-list-extra{
+      text-align: left;
+      color: #b5b5b5;
+    }
+    >div:nth-of-type(1){
+      width: 25%;
+      line-height: 44px;
+      text-align: left;
+      text-indent: 6px;
+    }
+    >div:nth-of-type(2){
+      width: 75%;
+
+      p{
+        padding-right: 15px;
+        //text-align: right;
+      }
+      .phone-number{
+        color: #888;
+        font-size: 16px;
+        height: 33px;
+        width: 90%;
+        margin-top: 3px;
+        border: none;
+      }
+    }
+    .choice-coupon{
+      >p:nth-of-type(1){
+        padding-left: 15px;
+        .grade{
+          color: #DF1313;
+        }
+        .choice-tip{
+          color: #888888;
+        }
+        >img{
+          width: 20px;
+          float: right;
+          margin-top: 12px;
+        }
+      }
+      line-height: 44px;
+    }
+  }
+  .fill-number{
+    >div:nth-of-type(2){
+      display: flex;
+      p:nth-of-type(1){
+        font-size: 23px;
+        line-height: 44px;
+        color: #888888;
+      }
+      input{
+        width: 80px;
+        height: 34px;
+        border-radius: 5px;
+        margin-top: 4px;
+        padding: 0;
+        text-align: center;
+        border: 1px solid #e0e0e0;
+        -webkit-appearance: none;
+      }
+      p:nth-of-type(2){
+        font-size: 23px;
+        line-height: 44px;
+        padding-left: 15px;
+        //font-weight: bolder;
+        color: #888888;
+      }
+    }
+  }
+  .phone{
+    border-top: 1px solid #e0e0e0;
+  }
+  .time{
+    >div:nth-of-type(2){
+      line-height: 44px;
+    }
+  }
+  .instro{
+    padding-top: 50px;
+    text-align: center;
+    span{
+      color: #e4524c;
+    }
+  }
+  .btn-contain{
+    position: fixed;
+    bottom: 0;
+    padding:7px 5%;
+    width: 90%;
+    background-color: #fff;
+    border-top:1px solid #e0e0e0;
+    .sure-btn{
+      font-size: 18px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      background-color: #6bc756;
+      border-radius: 5px;
+    }
+    .btn-disable{
+      background-color: #dddddd;
+    }
+  }
+  // 选择券
+  .coupon-contain{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    .coupon-content{
+      height: 100%;
+      background-color: #fbf9f9;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+    header{
+      background-color: #FFEED2;
+      line-height: 35px;
+      color: #F5A112;
+      font-size: 15px;
+      text-align: center;
+    }
+    .coupon-list{
+      padding: 10px 5%;
+    }
+    .coupon-item{
+      margin-bottom: 15px;
+      color: #fff;
+      width: 100%;
+      height: 105px;
+      background-size: 100% 100%;
+      display: flex;
+      .coupon-header{
+        flex:30%;
+        background-color: #6f7fe0;
+        border-radius: 4px 0 0 4px;
+        border-right: 2PX dashed white;
+        position: relative;
+        p:nth-of-type(1){
+          color: #6f7fe0;
+          text-align: center;
+          background-color: #ffffff;
+          width: 70px;
+          padding: 2px 0;
+          border-radius: 10px;
+          margin: 0 auto;
+          margin-top: 25px;
+        }
+        p:nth-of-type(2){
+          font-size: 19px;
+          text-align: center;
+          margin-top: 12px;
+        }
+      }
+      .coupon-header:after{
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: #fbf9f9;
+        border-radius: 15px;
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        z-index: 10;
+      }
+      .coupon-body{
+        position: relative;
+        left: -1px;
+        flex:70%;
+        display: flex;
+        flex-direction:column;
+        text-align: left;
+        align-items:center;/*垂直居中*/
+        justify-content: center;/*水平居中*/
+        //justify-content: space-between;
+        background: -webkit-linear-gradient(left, #6f7fe0 , #5166e6); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, #6f7fe0, #5166e6); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, #6f7fe0, #5166e6); /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #6f7fe0 , #5166e6); /* 标准的语法 */
+        border-radius: 0 4px 4px 0;
+        padding: 18px 0;
+        padding-left: 8%;
+        >p{
+          width: 100%;
+          text-align: left;
+
+        }
+        >p:nth-of-type(2){
+          font-size: 20px;
+          margin: 10px 0;
+        }
+        >p:nth-of-type(3){
+          font-size: 12px;
+        }
+        .number-contain{
+          position: absolute;
+          text-align: center;
+          top: 32px;
+          right: 7px;
+          font-size: 14px;
+          p:nth-of-type(2){
+            margin-top: 4px;
+          }
+        }
+      }
+      .coupon-body:before{
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: #fbf9f9;
+        border-radius: 15px;
+        position: absolute;
+        left: -8px;
+        bottom: -8px;
+        z-index: 10;
+      }
+    }
+    .overdue{
+      .coupon-header{
+        background-color: #c9c9c9;
+        p:nth-of-type(1){
+          color: #c9c9c9;
+        }
+      }
+      .coupon-body{
+        background: #c9c9c9;
+      }
+    }
+  }
+}
+

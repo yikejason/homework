@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>有笔作业</title>
+    <link rel="shortcut icon" href="./homework.png">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .share {
+            height: 100%;
+        }
+
+        .share .share-content {
+            height: 100%;
+            background-color: #fbf9f9;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .img-contain {
+            font-size: 0px;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .share-btn {
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #fff;
+            border-radius: 5px;
+            width: 95%;
+            margin: 20px auto;
+            background-color: #6bc756;
+        }
+        .share-img{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="share">
+        <div class="share-content">
+            <div class="img-contain">
+                <img src='./share_01.webp' alt="" onerror="this.src='./share_01.jpg'"/>
+                <img src='./share_02.webp' alt="" onerror="this.src='./share_02.jpg'"/>
+                <img src='./share_03.webp' alt="" onerror="this.src='./share_03.jpg'"/>
+                <img src='./share_04.webp' alt="" onerror="this.src='./share_04.jpg'"/>
+                <img id="share_06" class="share-img" src='./share_06.webp' alt="" onerror="this.src='./share_06.jpg'"/>
+                <img id = 'share_07' class="share-img" src='./share_07.webp' alt="" onerror="this.src='./share_07.jpg'"/>
+            </div>
+            <div class="share-btn" id='share_btn'>立即购买</div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var activity,seller,telToken;
+    var shareBtn = document.getElementById('share_btn');
+    var share_06 = document.getElementById('share_06');
+    var share_07 = document.getElementById('share_07');
+    var buyAddress = 'https://lapp.ucuxin.com/uxwork/index.html#/coupon/withoutBuyCoupon?';
+    var toBuyAddress = buyAddress + window.location.href.split('?')[1];
+    var data =  window.location.href.split('?')[1];
+    /**4
+     * 获取url参数
+     */
+    function GetRequest() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            var strs = str.split("&");
+            for(var i = 0; i < strs.length; i ++) {
+                theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+    var Request = new Object();
+    Request = GetRequest();
+    activity =  Request['activity'];
+    seller =  Request['seller'];
+    telToken =  Request['telToken'];
+    sessionStorage.setItem('activity',activity);
+    sessionStorage.setItem('seller',seller);
+    sessionStorage.setItem('telToken',telToken);
+    if(Request['app']=='true'){
+        share_07.setAttribute('style','display:block');
+    }else {
+        share_06.setAttribute('style','display:block');
+    }
+ shareBtn.onclick = function () {window.location.href = toBuyAddress}
+</script>

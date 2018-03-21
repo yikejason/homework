@@ -1,0 +1,163 @@
+// 优信外部订单详情
+.withoutOrderDetail{
+  .phone{
+    display: flex;
+    display: -webkit-flex;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+    p:nth-of-type(2){
+      padding-left: 15px;
+      color: #888;
+    }
+  }
+  .number{
+    color: #77BCED;
+  }
+  .bottom-btn{
+    >p:nth-of-type(1){
+      width: 60%;
+    }
+    >p:nth-of-type(2){
+      width: 40%;
+    }
+  }
+}
+.coupon-item{
+  position: relative;
+}
+// 优信外部订单列表
+.without{
+  .product-detail{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    .detail-contain{
+      position: fixed;
+      overflow: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      z-index: 999;
+      -webkit-overflow-scrolling: touch;
+      outline: 0;
+      display: -ms-flexbox;
+      display:-webkit-flex;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+    }
+    .detail-content{
+      width: 260px;
+      height: auto;
+      background-color: #fff;
+      border-radius: 5px;
+      line-height: 22px;
+    }
+    .detail-title{
+      text-align: center;
+      padding: 15px 0;
+    }
+    .info{
+      padding: 0 15px;
+      padding-bottom: 15px;
+    }
+    .btn{
+      padding: 15px 0;
+      text-align: center;
+      border-top: 1px solid #dddddd;
+      color: #32befa;
+    }
+  }
+  .user-tip{
+    display: none;
+    .btn-contian{
+      padding: 15px 5%;
+    }
+    .sure-btn{
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .userInfo-detail{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .userInfo-contain{
+      background-color: #fff;
+      .user-phone{
+        padding-left: 15px;
+      }
+      .item-header{
+        text-align: center;
+      }
+    }
+    .title{
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+      line-height: 20px;
+      border-bottom: 1px solid #ececec;
+    }
+  }
+}
+.userInfo{
+  color: #333;
+  .popup-list{
+    border-bottom: 1px solid #ececec;
+  }
+  .inputNumber{
+    width: 80%;
+    height: 30px;
+    border: none;
+  }
+  .userInfo-item{
+    padding: 5px 0;
+    border-bottom: 1px solid #ececec;
+    line-height: 44px;
+    display: flex;
+    display: -webkit-flex;
+    >.user-phone{
+      width: 75%;
+    }
+    .item-header{
+      width: 25%;
+      border-right: 1px solid #ececec;
+    }
+    .code{
+      color: #009EE8;
+      border-right: none;
+      border-left: 1px solid #ececec;
+      width: 30%;
+    }
+  }
+  .sure-btn{
+    background-color: #6bc756;
+    height: 45px;
+  }
+  .sure-btn::before{
+    border: none !important;
+  }
+
+}
+.am-modal-wrap{
+  display: -webkit-flex ;
+  -webkit-align-items:center;
+  -webkit-justify-content:center;
+}
+

@@ -1,0 +1,169 @@
+
+.payResult{
+  height: 100%;
+  .payResult-content{
+    height: 100%;
+    background-color: #fbf9f9;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .product-contain{
+    padding: 0 3%;
+    padding-top: 15px;
+  }
+  .coupon-item{
+    width: 100%;
+    height: 105px;
+    background-size: 100% 100%;
+    color: #fff;
+    display: flex;
+    display: -webkit-flex;
+    margin-bottom: 20px;
+    .coupon-header{
+      -webkit-flex:30%;
+      background-color: #6f7fe0;
+      border-radius: 4px 0 0 4px;
+      border-right: 2PX dashed white;
+      position: relative;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-align-items:center;/*垂直居中*/
+      -webkit-justify-content: center;/*水平居中*/
+      -webkit-flex-direction:column;
+      p:nth-of-type(1){
+        color: #6f7fe0;
+        text-align: center;
+        background-color: #ffffff;
+        width: 70px;
+        padding: 2px 0;
+        border-radius: 10px;
+        margin: 0 auto;
+        //margin-top: 25px;
+        margin-bottom: 12px;
+      }
+      p:nth-of-type(2){
+        font-size: 19px;
+        text-align: center;
+      }
+    }
+    .coupon-header:after{
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: #fbf9f9;
+      border-radius: 15px;
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      z-index: 10;
+    }
+    .coupon-body{
+      position: relative;
+      left: -1px;
+      -webkit-flex:70%;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction:column;
+      text-align: left;
+      -webkit-align-items:center;/*垂直居中*/
+      -webkit-justify-content: center;/*水平居中*/
+      //justify-content: space-between;
+      background: -webkit-linear-gradient(left, #6f7fe0 , #5166e6); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(right, #6f7fe0, #5166e6); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(right, #6f7fe0, #5166e6); /* Firefox 3.6 - 15 */
+      background: linear-gradient(to right, #6f7fe0 , #5166e6); /* 标准的语法 */
+      border-radius: 0 4px 4px 0;
+      padding: 18px 0;
+      padding-left: 8%;
+      >p{
+        width: 100%;
+        text-align: left;
+
+      }
+      >p:nth-of-type(2){
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      >p:nth-of-type(3){
+        font-size: 12px;
+      }
+      .number-contain{
+        position: absolute;
+        text-align: center;
+        top: 45px;
+        right: 7px;
+        font-size: 14px;
+        p:nth-of-type(2){
+          margin-top: 4px;
+        }
+      }
+    }
+    .coupon-body:before{
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: #fbf9f9;
+      border-radius: 15px;
+      position: absolute;
+      left: -8px;
+      bottom: -8px;
+      z-index: 10;
+    }
+  }
+  .title{
+    text-align: center;
+    span{
+      color: #E3524C;
+    }
+  }
+  .img-contain{
+    width: 94%;
+    margin: 35px auto;
+    img{
+      width: 100%;
+    }
+  }
+  .btn-contain{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    p{
+      -webkit-flex: 1;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+    }
+    p:nth-of-type(1){
+      background-color: #E3524C;
+    }
+    p:nth-of-type(2){
+      background-color: #6BC756;
+    }
+  }
+  .close-btn{
+    width: 150px;
+    height: 45px;
+    background-color: #6BC756;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    margin-top: 40px;
+  }
+  .no-pay{
+    padding: 18px;
+    background-color: #fff;
+    color: #FF6B00;
+    text-align: center;
+    font-size: 19px;
+    img{
+      width: 50px;
+    }
+  }
+}

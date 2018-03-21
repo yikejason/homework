@@ -1,0 +1,136 @@
+.paymentContainer{
+  height: 100%;
+  .paymentContainer-content{
+    height: 100%;
+    background-color: #eceef1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .am-tabs-pane-wrap{
+    height: 100% !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
+  }
+  .tloader{
+    height: 100% !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  @btnLoadMore:'加载更多...';
+  .tloader-btn:after{
+    content: @btnLoadMore;
+  }
+  .am-tabs-default-bar-tab{
+    border-right: 1px solid #ececec;
+  }
+  .tab-content-one{
+     height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
+    .content-one-head{
+      margin-top:10px;
+      background-color:#fff;
+      padding-left:10px;
+      .content-first{
+        display:flex;
+        justify-content:space-between;
+        border-bottom:1px solid #ddd;
+        padding:10px 0px;
+        .content-first-left{
+          .order-text{
+            font-size:14px;
+            font-weight:bold;
+          }
+          .order-time{
+            font-size:14px;
+            color:#ddd;
+            margin-top:2px;
+          }
+        }
+        .content-first-right{
+          img{
+            width:24px;
+            margin-right:4px;
+          }
+        }
+      }
+      .content-two{
+        display:flex;
+        padding:10px 0px;
+        border-bottom:1px solid #ddd;
+        .content-two-left{
+          background:url('../../../images/coupon-img.png');
+          background-size:cover;
+          width:70px;
+          height:70px;
+          padding:16px 0px;
+          text-align:center;
+          .money{
+            color:#fff;
+          }
+          .num{
+            font-size:14px;
+            color:#b5bef0;
+            margin-top:4px;
+          }
+        }
+        .content-two-right{
+          width:70%;
+          padding:16px 0px;
+          .money-num{
+            margin-top:6px;
+          }
+          .money-text{
+            color:#e4524c;
+            font-weight:bold;
+          }
+        }
+      }
+      .content-three{
+        overflow:hidden;
+        padding:10px 0px;
+        .pay-btn{
+          float:right;
+          margin-right:10px;
+          background-color:#e4524c;
+          color:#fff;
+          outline:none;
+          border:none;
+          padding:6px 10px;
+          border-radius:2px;
+          font-size:14px;
+        }
+      }
+    }
+
+  }
+  .content-two-order{
+    text-align: center;
+    padding-top: 40%;
+    img{
+      width: 160px;
+    }
+    p{
+      padding-top: 10px;
+    }
+  }
+  .tab-content-two{
+      .content-two-order{
+        text-align:center;
+        color:#8e8e8e;
+      }
+    }
+  .tab-content-one{
+    .content-two-order{
+      text-align:center;
+      color:#8e8e8e;
+    }
+  }
+}
+
+.paymentContainer-modal{
+  font-size:18px;
+  color:black;
+  font-weight:bold;
+}
