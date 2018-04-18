@@ -1,1 +1,2 @@
-# homework
+基于creat-react-app全家桶做的一款关于教育的app
+其中涉及到webpack打包H5端调取原生支付
